@@ -1,4 +1,4 @@
-This repository will contain all non-main modules I make for Multiplayer Template,
+This repository will contain all non-main modules I make for [Multiplayer Template](https://github.com/Leinad677YT/MC-multiplayer_template),
 either for pure content for a server or libraries in general.
 
 I cannot ensure a range of versions where they will work, but unless there are no updates in a long time, assume it's latest.
