@@ -64,7 +64,7 @@ $tag @s add l.inf_gen.on_r$(room_id)
 ```
 
 This will make them dissapear once the instance and/or the room is removed, as well as selecting what they should generate past them.  
-As you may have already guessed, _this can't be done inside the structure directly_, but the room _can, and should,_ contain the markers that will then be adapted to the current room data.
+As you may have already guessed, _this can't be done inside the structure directly_, but the room _can, and should,_ contain the markers that will then be adapted to the current room data. The system I use is tagging them with just `zl.inf_garden.door.$(cardinal)`, based off where they face when making the room structure file.
 
 #### Generators
 
