@@ -27,33 +27,37 @@
 
     ## SHAPE
         
-        ##         POSSIBILITIES        ##
-         #                               #
-         #   444###  111     111222      #
-         #   444###  111     111222      #
-         #   777     444###     ###      #
-         #   777     444###     ###      #
-         #                               #
-         #   - 01 -  - 02 -  - 03 -      #
-         #                               #
-         #   ###666     333  222333      #
-         #   ###666     333  222333      #
-         #      888  ###666  ###         #
-         #      888  ###666  ###         #
-         #                               #
-         #   - 04 -  - 05 -  - 06 -      #
-         #                               #
-         #   111222  222333  222         #
-         #   111222  222333  222         #
-         #   444###  ###666  ###  ####   #
-         #   444###  ###666  ###  ####   #
-         #                               #
-         #   - 07 -  - 08 -  -9-  -10-   #
-         #                               #
-        ##       ---------------        ##
+        ##       POSSIBILITIES       ##
+         #                            #
+         #   444###  111     111222   #     01 - 
+         #   444###  111     111222   #
+         #   777     444###     ###   #     02 - 
+         #   777     444###     ###   #
+         #                            #     03 - 
+         #   - 01 -  - 02 -  - 03 -   #
+         #                            #     04 - 
+         #   ###666     333  222333   #
+         #   ###666     333  222333   #     05 - 
+         #      888  ###666  ###      #
+         #      888  ###666  ###      #     06 - 
+         #                            #
+         #   - 04 -  - 05 -  - 06 -   #     07 - 
+         #                            #
+         #   111222  222333    22     #     08 - 
+         #   111222  222333    22     #
+         #   444###  ###666    ##     #     09 - X
+         #   444###  ###666    ##     #
+         #                            #     10 - X
+         #   - 07 -  - 08 -  - 09 -   #
+         #                            #     11 - X
+         #     ##    444###  ###666   #
+         #     ##    444###  ###666   #     12 - 
+         #                            #
+         #   - 10 -  - 11 -  - 12 -   #
+        ##     -----------------     ##
 
         data modify storage leinad_temp:game inf_garden.temp set value [{shape:1},{shape:2},{shape:3},{shape:4},{shape:5},{shape:6},{shape:7},{shape:8},{shape:9},{shape:10}]
-data modify storage leinad_temp:game inf_garden.temp set value [{shape:10}]
+data modify storage leinad_temp:game inf_garden.temp set value [{shape:9},{shape:10},{shape:11}]
         execute unless score #temp.4 zl.inf_garden.global matches 1 unless score #temp.7 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:1}]
         execute unless score #temp.1 zl.inf_garden.global matches 1 unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:2}]
         execute unless score #temp.1 zl.inf_garden.global matches 1 unless score #temp.2 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:3}]
@@ -63,6 +67,8 @@ data modify storage leinad_temp:game inf_garden.temp set value [{shape:10}]
         execute unless score #temp.1 zl.inf_garden.global matches 1 unless score #temp.2 zl.inf_garden.global matches 1 unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:7}]
         execute unless score #temp.2 zl.inf_garden.global matches 1 unless score #temp.3 zl.inf_garden.global matches 1 unless score #temp.6 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:8}]
         execute unless score #temp.2 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:9}]
+        execute unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:11}]
+        execute unless score #temp.6 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:12}]
 
         execute store result score #temp.9 zl.inf_garden.global run random value 1..3628800
         execute store result score #temp.5 zl.inf_garden.global if data storage leinad_temp:game inf_garden.temp[]
@@ -81,17 +87,17 @@ data modify storage leinad_temp:game inf_garden.temp set value [{shape:10}]
     ##
 
     ## DOORS
-        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.south] at @s run function zl.inf_garden:generation/global/mark/marker_door_south with storage leinad_temp:game inf_garden.generation
-        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.west] at @s run function zl.inf_garden:generation/global/mark/marker_door_west with storage leinad_temp:game inf_garden.generation
-        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.east] at @s run function zl.inf_garden:generation/global/mark/marker_door_east with storage leinad_temp:game inf_garden.generation
-        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.north] at @s run function zl.inf_garden:generation/global/mark/marker_door_north with storage leinad_temp:game inf_garden.generation
+        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.south] at @s run function zl.inf_garden:generation/start/mark/marker_door_south with storage leinad_temp:game inf_garden.generation
+        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.west] at @s run function zl.inf_garden:generation/start/mark/marker_door_west with storage leinad_temp:game inf_garden.generation
+        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.east] at @s run function zl.inf_garden:generation/start/mark/marker_door_east with storage leinad_temp:game inf_garden.generation
+        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.north] at @s run function zl.inf_garden:generation/start/mark/marker_door_north with storage leinad_temp:game inf_garden.generation
     ##
 ##
 
 ## LINK ROOMS
-    function zl.inf_garden:generation/global/check_connection with storage leinad_temp:game inf_garden.generation
+    function zl.inf_garden:generation/start/check_connection with storage leinad_temp:game inf_garden.generation
 ##
 
 ## MARK THE ROOM
-    function zl.inf_garden:generation/global/mark_room with storage leinad_temp:game inf_garden.generation
+    function zl.inf_garden:generation/start/mark_room with storage leinad_temp:game inf_garden.generation
 ##

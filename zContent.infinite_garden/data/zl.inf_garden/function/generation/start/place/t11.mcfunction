@@ -11,10 +11,13 @@ $execute positioned ^-7 ^ ^1 run place template $(structure) ~ 0 ~ $(rotation) n
         scoreboard players set #create_height l.room.current 32000
         # ID is given before
         execute positioned ^0.1 ^ ^8.1 positioned ~ 0 ~ run function l.user:room/create
+        execute positioned ^16.1 ^ ^8.1 positioned ~ 0 ~ run function l.user:room/create
 
         # clear
         execute positioned ^0.1 ^ ^8.1 positioned ~ 0 ~ summon marker run function zl.inf_garden:generation/start/mark/marker_fill with storage leinad_temp:game inf_garden.generation
         execute positioned ^0.1 ^ ^8.1 positioned ~-8.0 0 ~-8.0 summon marker run function zl.inf_garden:generation/start/mark/marker_kill with storage leinad_temp:game inf_garden.generation
+        execute positioned ^16.1 ^ ^8.1 positioned ~ 0 ~ summon marker run function zl.inf_garden:generation/start/mark/marker_fill with storage leinad_temp:game inf_garden.generation
+        execute positioned ^16.1 ^ ^8.1 positioned ~-8.0 0 ~-8.0 summon marker run function zl.inf_garden:generation/start/mark/marker_kill with storage leinad_temp:game inf_garden.generation
         # mark with dimension
         function zl.inf_garden:generation/start/place/mark_room with storage leinad_temp:game inf_garden.generation
     ##

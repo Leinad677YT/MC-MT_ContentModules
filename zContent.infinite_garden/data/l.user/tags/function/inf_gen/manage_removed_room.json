@@ -1,5 +1,5 @@
 {
     "values": [
-        "zl.inf_garden:generation/global/check_connection/reset_connected"
+        "zl.inf_garden:generation/start/check_connection/reset_connected"
     ]
 }
