@@ -17,7 +17,7 @@
 
 ## 1x1 final
     data remove storage zl.inf_garden:gen_final type_10[]
-    data modify storage zl.inf_garden:gen_final type_10 append value {structure:"zl.inf_garden:g_start/t_10/sculk_1"}
-    data modify storage zl.inf_garden:gen_final type_10 append value {structure:"zl.inf_garden:g_start/t_10/sculk_2_peaceful"}
-    data modify storage zl.inf_garden:gen_final type_10 append value {structure:"zl.inf_garden:g_start/t_10/exit"}
+    data modify storage zl.inf_garden:gen_final type_10 append value {structure:"zl.inf_garden:g_final/t_10/sculk_1"}
+    data modify storage zl.inf_garden:gen_final type_10 append value {structure:"zl.inf_garden:g_final/t_10/sculk_2_peaceful"}
+    data modify storage zl.inf_garden:gen_final type_10 append value {structure:"zl.inf_garden:g_final/t_10/exit"}
 ##
