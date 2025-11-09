@@ -14,6 +14,18 @@
     data modify storage zl.inf_garden:gen_start type_11 append value {structure:"zl.inf_garden:g_start/t_11/plant_lab"}
     data modify storage zl.inf_garden:gen_start type_11 append value {structure:"zl.inf_garden:g_start/t_11/u_turn_statue"}
 ##
+## 2x1 start BIS
+    data remove storage zl.inf_garden:gen_start type_12[]
+    data modify storage zl.inf_garden:gen_start type_12 append value {structure:"zl.inf_garden:g_start/t_12/u_turn_statue"}
+##
+## 2x2 start
+    data remove storage zl.inf_garden:gen_start type_7[]
+    data modify storage zl.inf_garden:gen_start type_7 append value {structure:"zl.inf_garden:g_start/t_7/big_sculk"}
+##
+## 2x2 start BIS
+    data remove storage zl.inf_garden:gen_start type_8[]
+    data modify storage zl.inf_garden:gen_start type_8 append value {structure:"zl.inf_garden:g_start/t_8/big_sculk"}
+##
 
 ## 1x1 final
     data remove storage zl.inf_garden:gen_final type_10[]

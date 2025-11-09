@@ -7,6 +7,7 @@
         scoreboard players set #config.depth zl.inf_garden.global 2
         scoreboard players set #1600 zl.inf_garden.global 1600
         scoreboard players set #3600 zl.inf_garden.global 3600
+    scoreboard objectives add zl.inf_garden.aux_content dummy
 ##
 
 ## ROOM POOLS

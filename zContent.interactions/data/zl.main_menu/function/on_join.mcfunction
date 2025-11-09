@@ -10,6 +10,3 @@
 ## LOAD
     function l.user:player/load {mode:"hub"}
 ##
-
-tag @s remove l.inventory.save_pos
-tag @s remove l.inventory.save_spawn

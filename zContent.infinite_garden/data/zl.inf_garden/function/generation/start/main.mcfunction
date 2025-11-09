@@ -41,9 +41,9 @@
          #      888  ###666  ###      #
          #      888  ###666  ###      #     06 - 
          #                            #
-         #   - 04 -  - 05 -  - 06 -   #     07 - 
+         #   - 04 -  - 05 -  - 06 -   #     07 - X
          #                            #
-         #   111222  222333    22     #     08 - 
+         #   111222  222333    22     #     08 - X
          #   111222  222333    22     #
          #   444###  ###666    ##     #     09 - X
          #   444###  ###666    ##     #
@@ -51,24 +51,48 @@
          #   - 07 -  - 08 -  - 09 -   #
          #                            #     11 - X
          #     ##    444###  ###666   #
-         #     ##    444###  ###666   #     12 - 
+         #     ##    444###  ###666   #     12 - X
          #                            #
          #   - 10 -  - 11 -  - 12 -   #
         ##     -----------------     ##
 
         data modify storage leinad_temp:game inf_garden.temp set value [{shape:1},{shape:2},{shape:3},{shape:4},{shape:5},{shape:6},{shape:7},{shape:8},{shape:9},{shape:10}]
-data modify storage leinad_temp:game inf_garden.temp set value [{shape:9},{shape:10},{shape:11}]
-        execute unless score #temp.4 zl.inf_garden.global matches 1 unless score #temp.7 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:1}]
-        execute unless score #temp.1 zl.inf_garden.global matches 1 unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:2}]
-        execute unless score #temp.1 zl.inf_garden.global matches 1 unless score #temp.2 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:3}]
-        execute unless score #temp.6 zl.inf_garden.global matches 1 unless score #temp.8 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:4}]
-        execute unless score #temp.3 zl.inf_garden.global matches 1 unless score #temp.6 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:5}]
-        execute unless score #temp.2 zl.inf_garden.global matches 1 unless score #temp.3 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:6}]
-        execute unless score #temp.1 zl.inf_garden.global matches 1 unless score #temp.2 zl.inf_garden.global matches 1 unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:7}]
-        execute unless score #temp.2 zl.inf_garden.global matches 1 unless score #temp.3 zl.inf_garden.global matches 1 unless score #temp.6 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:8}]
+data modify storage leinad_temp:game inf_garden.temp set value [{shape:7},{shape:8},{shape:9},{shape:10},{shape:10},{shape:10},{shape:10},{shape:11},{shape:12}]
+        # 1
+        execute unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:1}]
+        execute unless score #temp.7 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:1}]
+        # 2
+        execute unless score #temp.1 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:2}]
+        execute unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:2}]
+        # 3
+        execute unless score #temp.1 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:3}]
+        execute unless score #temp.2 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:3}]
+        # 4
+        execute unless score #temp.6 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:4}]
+        execute unless score #temp.8 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:4}]
+        # 5
+        execute unless score #temp.3 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:5}]
+        execute unless score #temp.6 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:5}]
+        # 6
+        execute unless score #temp.2 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:6}]
+        execute unless score #temp.3 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:6}]
+        # 7
+        execute unless score #temp.1 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:7}]
+        execute unless score #temp.2 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:7}]
+        execute unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:7}]
+        # 8
+        execute unless score #temp.2 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:8}]
+        execute unless score #temp.3 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:8}]
+        execute unless score #temp.6 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:8}]
+        # 9
         execute unless score #temp.2 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:9}]
+        # 10
+
+        # 11
         execute unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:11}]
+        # 12
         execute unless score #temp.6 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:12}]
+
 
         execute store result score #temp.9 zl.inf_garden.global run random value 1..3628800
         execute store result score #temp.5 zl.inf_garden.global if data storage leinad_temp:game inf_garden.temp[]

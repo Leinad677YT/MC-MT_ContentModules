@@ -7,8 +7,10 @@
                     "type_specific": {
                         "type": "minecraft:player",
                         "input": {
+                            "sneak": false,
                             "sprint": true,
-                            "sneak": true
+                            "right": true,
+                            "left": true
                         }
                     },
                     "movement": {

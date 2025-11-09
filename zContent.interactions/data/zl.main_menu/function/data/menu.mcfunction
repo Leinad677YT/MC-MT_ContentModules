@@ -38,7 +38,7 @@
                                             translation:[0.0f,0.0f,-0.15f],\
                                             left_rotation:[0.0f,0.0f,1.0f,0.0f]\
                                         },\
-                                        view_range: 0.01,\
+                                        view_range: 0.001,\
                                         interpolation_duration: 2,\
                                         start_interpolation: 0,\
                                         billboard: center \
@@ -49,7 +49,7 @@
                                             translation:[0.0f,0.0f,-0.15f],\
                                             left_rotation:[0.0f,0.0f,1.0f,0.0f]\
                                         },\
-                                        view_range: 0.01,\
+                                        view_range: 0.001,\
                                         interpolation_duration: 2,\
                                         start_interpolation: 0,\
                                         billboard: center \
@@ -60,7 +60,7 @@
                                             translation:[0.0f,0.0f,-0.15f],\
                                             left_rotation:[0.0f,0.0f,1.0f,0.0f]\
                                         },\
-                                        view_range: 0.01,\
+                                        view_range: 0.001,\
                                         interpolation_duration: 2,\
                                         start_interpolation: 0,\
                                         billboard: center \
@@ -70,7 +70,7 @@
                                             scale:[0.0f,0.0f,0.0f],\
                                             translation:[0.0f,0.0f,-0.15f]\
                                         },\
-                                        view_range: 0.01,\
+                                        view_range: 0.001,\
                                         interpolation_duration: 2,\
                                         start_interpolation: 0,\
                                         billboard: center \
@@ -80,7 +80,7 @@
                                             scale:[0.0f,0.0f,0.0f],\
                                             translation:[0.0f,-0.05f,-0.15f]\
                                         },\
-                                        view_range: 0.01,\
+                                        view_range: 0.001,\
                                         interpolation_duration: 2,\
                                         start_interpolation: 0,\
                                         billboard: center \
@@ -90,7 +90,7 @@
                                             scale:[0.0f,0.0f,0.0f],\
                                             translation:[0.0f,-0.05f,-0.15f]\
                                         },\
-                                        view_range: 0.01,\
+                                        view_range: 0.001,\
                                         interpolation_duration: 2,\
                                         start_interpolation: 0,\
                                         billboard: center \
@@ -100,7 +100,7 @@
                                             scale:[0.0f,0.0f,0.0f],\
                                             translation:[0.0f,-0.05f,-0.15f]\
                                         },\
-                                        view_range: 0.01,\
+                                        view_range: 0.001,\
                                         interpolation_duration: 2,\
                                         start_interpolation: 0,\
                                         billboard: center \
@@ -110,7 +110,7 @@
                                             scale:[0.0f,0.0f,0.0f],\
                                             translation:[0.0f,-0.05f,-0.15f]\
                                         },\
-                                        view_range: 0.01,\
+                                        view_range: 0.001,\
                                         interpolation_duration: 2,\
                                         start_interpolation: 0,\
                                         billboard: center \
@@ -120,7 +120,7 @@
                                             scale:[0.0f,0.0f,0.0f],\
                                             translation:[0.0f,-0.05f,-0.15f]\
                                         },\
-                                        view_range: 0.01,\
+                                        view_range: 0.001,\
                                         interpolation_duration: 2,\
                                         start_interpolation: 0,\
                                         billboard: center \
@@ -130,7 +130,7 @@
                                             scale:[0.0f,0.0f,0.0f],\
                                             translation:[0.0f,-0.05f,-0.15f]\
                                         },\
-                                        view_range: 0.01,\
+                                        view_range: 0.001,\
                                         interpolation_duration: 2,\
                                         start_interpolation: 0,\
                                         billboard: center \
