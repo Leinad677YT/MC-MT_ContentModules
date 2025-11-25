@@ -1,4 +1,9 @@
 ## CHECK IF LOOKING DOWN
+    
+    ## IF ALREADY SITTING SKIP
+        execute if entity @s[tag=zl.player_sit] run return run advancement revoke @s only zl.player_sit:sit_trigger
+    ##
+    
     tag @s add zl.sit.self
     execute unless entity @s[tag=zl.player_sit] positioned ^ ^ ^1 positioned ~-1 ~-1 ~-1 if entity @a[tag=zl.sit.self,dy=1.01,limit=1] unless entity @a[tag=zl.sit.self,dy=0.99,limit=1] run tag @s add zl.player_sit
 ##
