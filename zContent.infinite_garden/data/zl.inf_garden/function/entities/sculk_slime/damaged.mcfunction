@@ -1,4 +1,6 @@
-execute on passengers unless entity @s[type=item_display,tag=zl.inf_garden.entity.sculk_slime] run return fail
+scoreboard players set #temp_entity zl.inf_garden.aux_content 0
+execute on passengers if entity @s[type=item_display,tag=zl.inf_garden.entity.sculk_slime] run scoreboard players set #temp_entity zl.inf_garden.aux_content 1
+execute if score #temp_entity zl.inf_garden.aux_content matches 1 run return fail
 
 execute on passengers run item modify entity @s container.0 zl.inf_garden:turn_sculk_slime_dmg
 execute on passengers run scoreboard players set @s zl.inf_garden.global 10
