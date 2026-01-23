@@ -1,19 +1,30 @@
 {
-    "ultrawarm": false,
-    "natural": false,
-    "piglin_safe": true,
-    "respawn_anchor_works": false,
-    "bed_works": false,
-    "has_raids": false,
     "has_skylight": false,
     "has_ceiling": true,
     "coordinate_scale": 1,
     "ambient_light": 0,
     "logical_height": 16,
-    "effects": "minecraft:overworld",
     "infiniburn": "#minecraft:infiniburn_overworld",
     "min_y": 0,
     "height": 32,
     "monster_spawn_light_level": 0,
-    "monster_spawn_block_light_limit": 0
+    "monster_spawn_block_light_limit": 0,
+    "attributes": {
+        "minecraft:gameplay/can_pillager_patrol_spawn": false,
+        "minecraft:gameplay/nether_portal_spawns_piglin": false,
+        "minecraft:gameplay/can_start_raid": false,
+        "minecraft:gameplay/piglins_zombify": false,
+        "minecraft:gameplay/bed_rule": {
+            "argument": {
+                "can_set_spawn": "never",
+                "can_sleep": "when_dark",
+                "explodes": false
+            },
+            "modifier": "override"
+        },
+        "minecraft:gameplay/respawn_anchor_works": {
+            "argument": true,
+            "modifier": "override"
+        }
+    }
 }
