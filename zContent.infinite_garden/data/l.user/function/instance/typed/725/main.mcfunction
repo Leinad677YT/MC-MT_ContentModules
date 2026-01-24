@@ -3,14 +3,11 @@
 ##
 
 ## LOAD DIMENSION
-    
-    $execute in $(dimension) run forceload add 0 0
+    forceload add 0 0
 
     ## IF NOT DONE REITERATE
-        $execute in $(dimension) unless loaded 0 0 0 run return 1
+        execute unless loaded 0 0 0 run return 1
     ##
-
-
 ##
 
 ## CREATE GENERATOR GROUP
@@ -36,14 +33,14 @@
     ##
 
     ## ROOM VOLUME
-        # scaled by 1000 (16x8x16 room)
+        # scaled by 1000 (16x32x16 room)
         scoreboard players set #create_width l.room.current 16000
         scoreboard players set #create_height l.room.current 32000
         # ID is given before
-        $execute in $(dimension) positioned 8.0 0.0 8.0 run function l.user:room/create
+        execute positioned 8.0 0.0 8.0 run function l.user:room/create
         $data modify storage leinad_temp:game inf_garden.macro.instance_id set value $(id)
         data modify storage leinad_temp:game inf_garden.macro.generator set value "start"
-        $execute in $(dimension) run function zl.inf_garden:zaux/load/add_clear_to_start
+        function zl.inf_garden:zaux/load/add_clear_to_start
         function zl.inf_garden:zaux/load/mark_room with storage leinad_temp:game inf_garden.macro
     ##
 ##
@@ -51,19 +48,19 @@
 ## PLAYERS AND START ROOM
 
     ## PHYSICAL
-        $execute in $(dimension) run function l.user:instance/typed/725/start_game with storage leinad_temp:game inf_garden.macro
+        function l.user:instance/typed/725/start_game with storage leinad_temp:game inf_garden.macro
         function zl.inf_garden:zaux/place_room with storage leinad_temp:game inf_garden.macro
-        $execute in $(dimension) run function #zl.user:manage_start_door with storage leinad_temp:game inf_garden.macro
+        function #zl.user:inf_garden/manage_start_room with storage leinad_temp:game inf_garden.macro
     ##
     
     ## PLAYERS
-        $execute in $(dimension) as @a[scores={l.instance.current=$(id)}] run function zl.inf_garden:manage_player
+        $execute as @a[scores={l.instance.current=$(id)}] run function zl.inf_garden:manage_player
     ##
 ##
 
 
 ## EXIT LOAD STATUS
-    $execute in $(dimension) run forceload remove 0 0
+    forceload remove 0 0
     $data modify storage leinad_perm:data instance_db[{id:$(id)}].finished set value 1b
     return -1
 ##
