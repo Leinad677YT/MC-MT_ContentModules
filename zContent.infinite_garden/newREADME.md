@@ -32,5 +32,20 @@ This pack is a rewrite of the generator I made for a mapjam (Alo gente de la jam
         >  
         > Used to set the start room and it's generators on instance creation.
         > If you set `leinad_temp:game inf_garden.macro.template` to the string of the template you wanna use and return `1`, the starting room will not be the default. You _have to_ set the starting doors here aswell if that's the case.  
-    - `#zl.user:inf_garden/manage_player_join`  
     - `#zl.user:inf_garden/manage_post_place`  
+        > Called with: 
+        > - `$(instance_id)`: id of the currently generating instance
+        > - `$(dimension)`: string of the target dimension (call execution is already `in $(dimension)`)  
+        > - `$(group)`: group of the inf_room_generator  
+        >  
+        > Used to execute commands after the template has been placed. Only executed if a non-default generator was used.
+    - `#zl.user:inf_garden/manage_player_join`  
+        > Called with: 
+        > - `$(instance_id)`: id of the currently generating instance
+        > - `$(dimension)`: string of the target dimension  
+        > - `$(group)`: group of the inf_room_generator  
+        >  `at` the current player.
+        >
+        > Used to set the target mode and execute the general joining logic on players, to set a different mode than `inf_garden`, change the string in `leinad_temp:game inf_garden.macro.mode`. If you wanted to save their data before joining, this is the best place to do so.
+
+

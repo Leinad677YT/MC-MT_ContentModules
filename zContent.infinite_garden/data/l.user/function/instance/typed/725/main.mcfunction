@@ -50,7 +50,7 @@
     ## PHYSICAL
         function l.user:instance/typed/725/start_game with storage leinad_temp:game inf_garden.macro
         function zl.inf_garden:zaux/place_room with storage leinad_temp:game inf_garden.macro
-        function #zl.user:inf_garden/manage_start_room with storage leinad_temp:game inf_garden.macro
+        execute if score #start_room zl.inf_garden.global matches 1 run function #zl.user:inf_garden/manage_post_place with storage leinad_temp:game inf_garden.macro
     ##
     
     ## PLAYERS
@@ -66,9 +66,9 @@
 ##
 
 ################################### DEBUGGING ########################################
-### 1 > CARGAR
+### 1 > LOAD CHUNK
 ###
 ### 2 > START GENERADOR
 ###
 ### 3 > PLACE 0 0 ROOM
-###   > MOVE PLAYER
+###   > MOVE PLAYERS
