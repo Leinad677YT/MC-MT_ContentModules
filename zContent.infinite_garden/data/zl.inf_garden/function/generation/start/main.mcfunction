@@ -93,7 +93,7 @@ data modify storage leinad_temp:game inf_garden.temp set value [{shape:7},{shape
         # 12
         execute unless score #temp.6 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:12}]
 
-
+        # MULTIPLE OF 1..19, 12,14,15,16, 18, 20... TO MAKE IT EASIER TO GET EQUAL PROBABILITIES FOR EACH
         execute store result score #temp.9 zl.inf_garden.global run random value 1..3628800
         execute store result score #temp.5 zl.inf_garden.global if data storage leinad_temp:game inf_garden.temp[]
         execute store result storage leinad_temp:game inf_garden.generation.roll int 1 run scoreboard players operation #temp.9 zl.inf_garden.global %= #temp.5 zl.inf_garden.global

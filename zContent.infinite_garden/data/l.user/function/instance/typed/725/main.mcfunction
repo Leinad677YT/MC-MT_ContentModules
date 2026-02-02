@@ -16,7 +16,8 @@
         execute store result storage leinad_temp:game inf_garden.macro.depth int 1 run scoreboard players get #config.depth zl.inf_garden.global
         data modify storage leinad_temp:game inf_garden.macro.on_disconnection set value 0
         $data modify storage leinad_temp:game inf_garden.macro.dimension set value "$(dimension)"
-        execute store result storage leinad_temp:game inf_garden.macro.group int 1 run function l.user:inf_gen/new_group with storage leinad_temp:game inf_garden.macro
+        execute store result storage leinad_temp:game inf_garden.macro.group_id int 1 run function l.user:inf_gen/new_group with storage leinad_temp:game inf_garden.macro
+        data modify storage leinad_temp:game inf_garden.macro.group set from storage leinad_temp:game inf_garden.macro.group_id
     ##
     
     ## MARK IT
@@ -62,6 +63,7 @@
 ## EXIT LOAD STATUS
     forceload remove 0 0
     $data modify storage leinad_perm:data instance_db[{id:$(id)}].finished set value 1b
+    tellraw @a {storage:"leinad_temp:game",nbt:"inf_garden.macro"}
     return -1
 ##
 

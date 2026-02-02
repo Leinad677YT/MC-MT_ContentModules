@@ -55,7 +55,7 @@ execute positioned 8.1 8.0 0.1 summon marker run function AUX {DATA}
 # AUX
 $data modify entity @s data.room_id set value $(room_id)
 $data modify entity @s data.instance_id set value $(instance_id)
-$data modify entity @s data.group_id set value $(group)
+$data modify entity @s data.group_id set value $(group_id)
 $data modify entity @s data.generator set value $(generator)
 tag @s add zl.inf_garden.door
 tag @s add l.inf_gen.clear_etag

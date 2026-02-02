@@ -4,6 +4,10 @@
 
 ## NOT CONNECTED => ADD TO GENERATION QUEUE
 
+    ## SAFE-DELETE TAG
+        tag @s remove zl.inf_garden.door.to_generate
+    ##
+
     ## NOT INSIDE RANGE => RETURN
         execute unless score #current_depth l.room.current < #max_depth l.room.current run return fail
     ##
