@@ -1,4 +1,3 @@
-
 ride @s mount @e[type=magma_cube,tag=zl.inf_garden.temp_current,distance=0..5,limit=1]
 
 item replace entity @s container.0 with minecraft:poisonous_potato[item_model="zl.inf_garden:entities/sculk_slime"]

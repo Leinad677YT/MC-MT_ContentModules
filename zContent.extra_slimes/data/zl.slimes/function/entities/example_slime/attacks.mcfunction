@@ -1,0 +1,1 @@
+playsound minecraft:entity.slime.attack hostile @a ~ ~ ~ 1 1 0
