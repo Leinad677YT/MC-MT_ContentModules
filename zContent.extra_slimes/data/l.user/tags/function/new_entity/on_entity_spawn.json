@@ -1,5 +1,6 @@
 {
     "values": [
-        "zl.slimes:entities/example_slime/spawn"
+        "zl.slimes:entities/example_slime/spawn",
+        "zl.slimes:entities/example_slime/spawn_child"
     ]
 }

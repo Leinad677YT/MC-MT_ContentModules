@@ -1,15 +1,8 @@
 ## type= minecraft:magma_cube
-## size= smol
+## condition= child
 
 ## should?
-    execute unless entity @s[type=magma_cube,tag=zl.entity.example_slime] run return fail
-
-##
-
-## MARK SELF
-    tag @s add zl.entity.example_slime.child
-    tag @s add zl.entity.example_slime.root
-    tag @s remove zl.entity.example_slime
+    execute unless entity @s[type=magma_cube,tag=zl.entity.example_slime.child] run return fail
 ##
 
 ## ATRIB
@@ -22,14 +15,16 @@
     effect give @s invisibility infinite 0 true
     data modify entity @s Silent set value true
     # size
-    execute store result entity @s Size int 1 run scoreboard players set #sync.aux zl.temp 3
-        # attribute @s scale base set 1
+        execute store result score #sync.aux zl.temp run data get entity @s Size
+        # data modify entity @s Size set value 0
+        # attribute @s scale base set 3
 ##
 
 ## SET DATA FOR DISPLAY SCALE
     execute store result entity @s data.zl_entity.scale_base float 1.0 \
             store result entity @s data.zl_entity.scale_squish float 0.9 \
             store result entity @s data.zl_entity.scale_expand float 1.1 run scoreboard players add #sync.aux zl.temp 1
+
 ##
 
 ## DISPLAY

@@ -20,12 +20,12 @@
 
 ## MANAGE AIR ANIMATION (back to normal shape)
     execute unless score @s zl.slimes.air matches ..0 run scoreboard players remove @s zl.slimes.air 1
-    execute if score #sync.bool zl.temp matches 1 unless score @s zl.slimes.air matches 1.. run data merge entity @s {transformation:{scale:[1.0f,1.0f,1.0f]},interpolation_duration:10}
+    $execute if score #sync.bool zl.temp matches 1 unless score @s zl.slimes.air matches 1.. run data merge entity @s {transformation:{scale:[$(scale_base)f,$(scale_base)f,$(scale_base)f]},interpolation_duration:10}
     execute if score @s zl.slimes.air matches ..0 run scoreboard players reset @s zl.slimes.air
 ##
 
 ## MANAGE JUMPS (squish)
-    execute if score #sync.bool zl.temp matches 1 on vehicle if predicate zl.slimes:on_ground unless entity @s[tag=zl.entity.on_ground] run function zl.slimes:entities/example_slime/land
-    execute if score #sync.bool zl.temp matches 1 on vehicle unless predicate zl.slimes:on_ground if entity @s[tag=zl.entity.on_ground] run function zl.slimes:entities/example_slime/jump
+    execute if score #sync.bool zl.temp matches 1 on vehicle if predicate zl.slimes:on_ground unless entity @s[tag=zl.entity.on_ground] run function zl.slimes:entities/example_slime/land with entity @s data.zl_entity
+    execute if score #sync.bool zl.temp matches 1 on vehicle unless predicate zl.slimes:on_ground if entity @s[tag=zl.entity.on_ground] run function zl.slimes:entities/example_slime/jump with entity @s data.zl_entity
     scoreboard players reset #sync.bool zl.temp
 ##
