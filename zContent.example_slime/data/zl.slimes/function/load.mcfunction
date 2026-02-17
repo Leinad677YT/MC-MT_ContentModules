@@ -1,5 +1,5 @@
 ## TELLRAW
-    tellraw @a[tag=l.core.tellraw] [{text:"[+] ",color:"#7c33e2"},{color:"#ed9dff",translate:"leinad.zl.slimes.tellraw.load",fallback:"¡Extra slimes has been loaded!"}]
+    tellraw @a[tag=l.core.tellraw] [{text:"[+] ",color:"#7c33e2"},{color:"#ed9dff",translate:"leinad.zl.slimes.tellraw.load",fallback:"The example slime variants datapack has been loaded!"}]
 ##
 
 ## SCOREBOARDS
