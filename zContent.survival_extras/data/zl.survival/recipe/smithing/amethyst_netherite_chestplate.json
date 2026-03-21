@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:netherite_chestplate",
+    "result": {
+        "id": "minecraft:chainmail_chestplate",
+        "components": {
+            "custom_data":{"l":{"item_version":-1,"item_group":"zl_custom_tools","item_id":"amethyst_netherite_chestplate"}},
+            "minecraft:equippable": {"slot":"chest", "asset_id":"zl.item:amethyst_netherite"},
+            "minecraft:item_model":"zl.item:amethyst_netherite_chestplate",
+            "minecraft:item_name": {
+                "translate": "leinad.zl.item.crystallized_netherite_chestplate.name",
+                "fallback": "Crystallized netherite chestplate",
+                "color":"#a340d9"
+            },
+            "minecraft:repair_cost": 0,
+            "minecraft:repairable":{"items": "minecraft:amethyst_shard"},
+            "minecraft:max_damage":5140,
+            "minecraft:enchantments":{
+                "zl.survival:item/fragmented":1,
+                "zl.survival:item/reinforced_armor":1,
+                "zl.survival:fixed/crystallized": 5
+            },
+            "minecraft:attribute_modifiers": [
+                {"id":"c-minecraft:explosion_knockback_resistance", "amount": 1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"chest"},
+                {"id":"c-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"chest"},
+                {"id":"c-minecraft:armor", "amount": 8, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"chest"},
+                {"id":"c-minecraft:armor_toughness", "amount": 3, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"chest"}
+            ]
+        }
+    },
+    "addition": [
+        "minecraft:amethyst_shard"
+    ],
+    "template": [
+        "minecraft:netherite_upgrade_smithing_template"
+    ],
+    "show_notification": true
+}

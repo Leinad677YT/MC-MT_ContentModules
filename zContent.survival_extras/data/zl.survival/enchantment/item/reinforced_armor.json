@@ -1,0 +1,22 @@
+{
+    "anvil_cost": 0,
+    "description": {
+        "translate": "leinad.zl.item.reinforced_armor.descr",
+        "color": "#e0d543",
+        "bold": false,
+        "fallback": "Reinforcement"
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "slots": ["armor"],
+    "supported_items": "#zl.survival:armor",
+    "weight": 1,
+    "effects": {}
+}
