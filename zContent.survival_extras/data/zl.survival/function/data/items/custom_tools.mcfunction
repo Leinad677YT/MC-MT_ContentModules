@@ -167,7 +167,7 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_chestplate" se
     version: 14, \
     item: "minecraft:netherite_chestplate", \
     components: { \
-        "minecraft:equippable": {slot:"chest", asset_id:"zl.item:amethyst_netherite"}, \
+        "minecraft:equippable": {slot:"chest", asset_id:"zl.item:quartz_netherite"}, \
         "minecraft:item_model":"zl.item:quartz_netherite_chestplate", \
         "minecraft:item_name": {translate:"leinad.zl.item.crystallized_netherite_chestplate.name",fallback:"Crystallized netherite chestplate",color:"#eeeddd"}, \
         "minecraft:damage_resistant":{types: "#minecraft:is_fire"}, \
