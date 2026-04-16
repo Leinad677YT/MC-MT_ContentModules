@@ -4,7 +4,7 @@ data modify storage l.item:data groups append value {gid:zl_custom_tools, versio
 
 data modify storage l.item:data zl_custom_tools."amethyst_netherite_boots" set value { \
     id:"amethyst_netherite_boots", \
-    version: 14, \
+    version: 15, \
     item: "minecraft:chainmail_boots", \
     components: { \
         "minecraft:equippable": {slot:"feet", asset_id:"zl.item:amethyst_netherite"}, \
@@ -31,7 +31,7 @@ data modify storage l.item:data zl_custom_tools."amethyst_netherite_boots" set v
 
 data modify storage l.item:data zl_custom_tools."amethyst_netherite_leggings" set value { \
     id:"amethyst_netherite_leggings", \
-    version: 14, \
+    version: 15, \
     item: "minecraft:chainmail_leggings", \
     components: { \
         "minecraft:equippable": {slot:"legs", asset_id:"zl.item:amethyst_netherite"}, \
@@ -58,7 +58,7 @@ data modify storage l.item:data zl_custom_tools."amethyst_netherite_leggings" se
 
 data modify storage l.item:data zl_custom_tools."amethyst_netherite_chestplate" set value { \
     id:"amethyst_netherite_chestplate", \
-    version: 14, \
+    version: 15, \
     item: "minecraft:chainmail_chestplate", \
     components: { \
         "minecraft:equippable": {slot:"chest", asset_id:"zl.item:amethyst_netherite"}, \
@@ -85,7 +85,7 @@ data modify storage l.item:data zl_custom_tools."amethyst_netherite_chestplate" 
 
 data modify storage l.item:data zl_custom_tools."amethyst_netherite_helmet" set value { \
     id:"amethyst_netherite_helmet", \
-    version: 14, \
+    version: 15, \
     item: "minecraft:chainmail_helmet", \
     components: { \
         "minecraft:equippable": {slot:"head", asset_id:"zl.item:amethyst_netherite"}, \
@@ -114,7 +114,7 @@ data modify storage l.item:data zl_custom_tools."amethyst_netherite_helmet" set 
 
 data modify storage l.item:data zl_custom_tools."quartz_netherite_boots" set value { \
     id:"quartz_netherite_boots", \
-    version: 14, \
+    version: 15, \
     item: "minecraft:netherite_boots", \
     components: { \
         "minecraft:equippable": {slot:"feet", asset_id:"zl.item:quartz_netherite"}, \
@@ -139,7 +139,7 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_boots" set val
 
 data modify storage l.item:data zl_custom_tools."quartz_netherite_leggings" set value { \
     id:"quartz_netherite_leggings", \
-    version: 14, \
+    version: 15, \
     item: "minecraft:netherite_leggings", \
     components: { \
         "minecraft:equippable": {slot:"legs", asset_id:"zl.item:quartz_netherite"}, \
@@ -164,7 +164,7 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_leggings" set 
 
 data modify storage l.item:data zl_custom_tools."quartz_netherite_chestplate" set value { \
     id:"quartz_netherite_chestplate", \
-    version: 14, \
+    version: 15, \
     item: "minecraft:netherite_chestplate", \
     components: { \
         "minecraft:equippable": {slot:"chest", asset_id:"zl.item:quartz_netherite"}, \
@@ -187,7 +187,7 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_chestplate" se
 
 data modify storage l.item:data zl_custom_tools."quartz_netherite_helmet" set value { \
     id:"quartz_netherite_helmet", \
-    version: 14, \
+    version: 15, \
     item: "minecraft:netherite_helmet", \
     components: { \
         "minecraft:equippable": {slot:"head", asset_id:"zl.item:quartz_netherite"}, \
