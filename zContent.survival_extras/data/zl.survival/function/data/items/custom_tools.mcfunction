@@ -150,11 +150,11 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_leggings" set 
         "minecraft:repairable":{items:"minecraft:quartz"}, \
         "minecraft:max_damage": 880, \
         "minecraft:attribute_modifiers": [ \
-            {id:"b-minecraft:explosion_knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"legs"}, \
-            {id:"b-minecraft:safe_fall_distance", "amount": 5, "operation":"add_value", "type":"minecraft:safe_fall_distance", "display":{"type":"default"}, "slot":"legs"}, \
-            {id:"b-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"legs"}, \
-            {id:"b-minecraft:armor", "amount": 7, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"legs"}, \
-            {id:"b-minecraft:armor_toughness", "amount": 5, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"legs"} \
+            {id:"l-minecraft:explosion_knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"legs"}, \
+            {id:"l-minecraft:safe_fall_distance", "amount": 5, "operation":"add_value", "type":"minecraft:safe_fall_distance", "display":{"type":"default"}, "slot":"legs"}, \
+            {id:"l-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"legs"}, \
+            {id:"l-minecraft:armor", "amount": 7, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"legs"}, \
+            {id:"l-minecraft:armor_toughness", "amount": 5, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"legs"} \
         ] \
     }, \
     enchantments: { \
