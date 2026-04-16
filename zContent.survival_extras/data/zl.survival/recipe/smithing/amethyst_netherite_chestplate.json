@@ -12,13 +12,16 @@
                 "fallback": "Crystallized netherite chestplate",
                 "color":"#a340d9"
             },
+            "minecraft:damage_resistant":{
+                "types": "#minecraft:is_fire"
+            },
             "minecraft:repair_cost": 0,
             "minecraft:repairable":{"items": "minecraft:amethyst_shard"},
             "minecraft:max_damage":5140,
             "minecraft:enchantments":{
                 "zl.survival:item/fragmented":1,
                 "zl.survival:item/reinforced_armor":1,
-                "zl.survival:fixed/crystallized": 5
+                "zl.survival:fixed/crystallized_prot": 5
             },
             "minecraft:attribute_modifiers": [
                 {"id":"c-minecraft:explosion_knockback_resistance", "amount": 1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"chest"},

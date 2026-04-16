@@ -2,6 +2,8 @@
     "values": [
         "zl.survival:item/fragmented",
         "zl.survival:item/reinforced_armor",
-        "zl.survival:fixed/crystallized"
+        "zl.survival:fixed/crystallized_prot",
+        "zl.survival:fixed/crystallized_fall",
+        "zl.survival:fixed/crystallized_springs"
     ]
 }

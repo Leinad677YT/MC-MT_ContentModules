@@ -2,29 +2,24 @@
     "type": "minecraft:smithing_transform",
     "base": "minecraft:netherite_helmet",
     "result": {
-        "id": "minecraft:chainmail_helmet",
+        "id": "minecraft:netherite_helmet",
         "components": {
-            "custom_data":{"l":{"item_version":-1,"item_group":"zl_custom_tools","item_id":"amethyst_netherite_helmet"}},
-            "minecraft:equippable": {"slot":"head", "asset_id":"zl.item:amethyst_netherite"},
-            "minecraft:item_model":"zl.item:amethyst_netherite_helmet",
+            "custom_data":{"l":{"item_version":-1,"item_group":"zl_custom_tools","item_id":"quartz_netherite_helmet"}},
+            "minecraft:equippable": {"slot":"head", "asset_id":"zl.item:quartz_netherite"},
+            "minecraft:item_model":"zl.item:quartz_netherite_helmet",
             "minecraft:item_name": {
                 "translate": "leinad.zl.item.crystallized_netherite_boots.name",
                 "fallback":"Crystallized netherite helmet",
-                "color":"#a340d9"
+                "color":"#eeeddd"
             },
             "minecraft:damage_resistant":{
                 "types": "#minecraft:is_fire"
             },
             "minecraft:repair_cost": 0,
-            "minecraft:repairable":{"items": "minecraft:amethyst_shard"},
-            "minecraft:max_damage":4440,
-            "minecraft:enchantments":{
-                "zl.survival:item/fragmented":1,
-                "zl.survival:item/reinforced_armor":1,
-                "zl.survival:fixed/crystallized_prot": 5
-            },
+            "minecraft:repairable":{"items": "minecraft:quartz"},
+            "minecraft:max_damage":780,
             "minecraft:attribute_modifiers": [
-                {"id":"h-minecraft:explosion_knockback_resistance", "amount": 1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"head"},
+                {"id":"h-minecraft:explosion_knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"head"},
                 {"id":"h-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"head"},
                 {"id":"h-minecraft:armor", "amount": 3, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"head"},
                 {"id":"h-minecraft:armor_toughness", "amount": 3, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"head"}
@@ -32,7 +27,7 @@
         }
     },
     "addition": [
-        "minecraft:amethyst_shard"
+        "minecraft:quartz"
     ],
     "template": [
         "minecraft:netherite_upgrade_smithing_template"

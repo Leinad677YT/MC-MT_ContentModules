@@ -1,36 +1,24 @@
 {
     "anvil_cost": 0,
     "description": {
-        "translate": "leinad.zl.item.crystallized_armor.descr",
-        "color": "#ddc2fb",
+        "translate": "leinad.zl.item.crystallized_springs.descr",
+        "color": "#e7bb74",
         "bold": false,
-        "fallback": "Crystallized"
+        "fallback": "Crystallized springs"
     },
     "max_cost": {
         "base": 0,
         "per_level_above_first": 0
     },
-    "max_level": 5,
+    "max_level": 3,
     "min_cost": {
         "base": 0,
         "per_level_above_first": 0
     },
-    "slots": ["armor"],
+    "slots": ["legs"],
     "supported_items": "#zl.survival:equipment",
     "weight": 1,
     "effects": {
-        "minecraft:damage_protection": [
-            {
-                "effect": {
-                    "type": "minecraft:add",
-                    "value": {
-                        "type": "minecraft:linear",
-                        "base": 1,
-                        "per_level_above_first": 1
-                    }
-                }
-            }
-        ],
         "minecraft:tick": [
             {
                 "effect": {
@@ -42,8 +30,8 @@
                     },
                     "vertical_position": {
                         "type": "in_bounding_box",
-                        "offset": 0,
-                        "scale": 1
+                        "offset": -0.86,
+                        "scale": 0.22
                     },
                     "horizontal_velocity": {
                         "base": 0,
@@ -54,17 +42,18 @@
                         "movement_scale": 0
                     },
                     "particle": {
-                        "type": "minecraft:electric_spark"
-                    }
+                        "type": "minecraft:white_ash"
+                    },
+                    "speed": 2
                 },
                 "requirements": {
-                    "condition": "minecraft:random_chance",
-                    "chance": {
-                        "type": "minecraft:enchantment_level",
-                        "amount":{
-                            "type": "minecraft:linear",
-                            "base": 0.01,
-                            "per_level_above_first": 0.01
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "movement": {
+                            "vertical_speed": {
+                                "min": 0.3
+                            }   
                         }
                     }
                 }

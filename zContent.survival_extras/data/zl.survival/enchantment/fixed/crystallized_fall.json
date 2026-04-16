@@ -1,0 +1,86 @@
+{
+    "anvil_cost": 0,
+    "description": {
+        "translate": "leinad.zl.item.crystallized_fall.descr",
+        "color": "#e7bb74",
+        "bold": false,
+        "fallback": "Crystal falling"
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_level": 4,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "slots": ["feet"],
+    "supported_items": "#zl.survival:equipment",
+    "weight": 1,
+    "effects": {
+        "minecraft:damage_protection": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 2,
+                        "per_level_above_first": 2
+                    }
+                },
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "minecraft:is_fall"
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:spawn_particles",
+                    "horizontal_position": {
+                        "type": "in_bounding_box",
+                        "offset": 0,
+                        "scale": 1
+                    },
+                    "vertical_position": {
+                        "type": "in_bounding_box",
+                        "offset": -1,
+                        "scale": 0.06
+                    },
+                    "horizontal_velocity": {
+                        "base": 0,
+                        "movement_scale": 0
+                    },
+                    "vertical_velocity": {
+                        "base": 0,
+                        "movement_scale": 0
+                    },
+                    "particle": {
+                        "type": "minecraft:trial_spawner_detection"
+                    },
+                    "speed": 2
+                },
+                "requirements": {
+                    "condition": "minecraft:random_chance",
+                    "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount":{
+                            "type": "minecraft:linear",
+                            "base": 0.04,
+                            "per_level_above_first": 0.01
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

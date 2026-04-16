@@ -3,7 +3,7 @@
         "type": "flat",
         "settings": {
             "layers": [],
-            "biome": "l.core:void",
+            "biome": "zl.main_menu:hub",
             "features": false,
             "lakes": false,
             "structure_overrides": []
