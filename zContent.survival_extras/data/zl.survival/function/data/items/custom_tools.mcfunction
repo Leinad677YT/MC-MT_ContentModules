@@ -4,7 +4,7 @@ data modify storage l.item:data groups append value {gid:zl_custom_tools, versio
 
 data modify storage l.item:data zl_custom_tools."amethyst_netherite_boots" set value { \
     id:"amethyst_netherite_boots", \
-    version: 12, \
+    version: 13, \
     item: "minecraft:chainmail_boots", \
     components: { \
         "minecraft:equippable": {slot:"feet", asset_id:"zl.item:amethyst_netherite"}, \
@@ -31,7 +31,7 @@ data modify storage l.item:data zl_custom_tools."amethyst_netherite_boots" set v
 
 data modify storage l.item:data zl_custom_tools."amethyst_netherite_leggings" set value { \
     id:"amethyst_netherite_leggings", \
-    version: 12, \
+    version: 13, \
     item: "minecraft:chainmail_leggings", \
     components: { \
         "minecraft:equippable": {slot:"legs", asset_id:"zl.item:amethyst_netherite"}, \
@@ -58,7 +58,7 @@ data modify storage l.item:data zl_custom_tools."amethyst_netherite_leggings" se
 
 data modify storage l.item:data zl_custom_tools."amethyst_netherite_chestplate" set value { \
     id:"amethyst_netherite_chestplate", \
-    version: 12, \
+    version: 13, \
     item: "minecraft:chainmail_chestplate", \
     components: { \
         "minecraft:equippable": {slot:"chest", asset_id:"zl.item:amethyst_netherite"}, \
@@ -85,7 +85,7 @@ data modify storage l.item:data zl_custom_tools."amethyst_netherite_chestplate" 
 
 data modify storage l.item:data zl_custom_tools."amethyst_netherite_helmet" set value { \
     id:"amethyst_netherite_helmet", \
-    version: 12, \
+    version: 13, \
     item: "minecraft:chainmail_helmet", \
     components: { \
         "minecraft:equippable": {slot:"head", asset_id:"zl.item:amethyst_netherite"}, \
@@ -114,7 +114,7 @@ data modify storage l.item:data zl_custom_tools."amethyst_netherite_helmet" set 
 
 data modify storage l.item:data zl_custom_tools."quartz_netherite_boots" set value { \
     id:"quartz_netherite_boots", \
-    version: 12, \
+    version: 13, \
     item: "minecraft:netherite_boots", \
     components: { \
         "minecraft:equippable": {slot:"feet", asset_id:"zl.item:quartz_netherite"}, \
@@ -128,7 +128,7 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_boots" set val
             {"id":"b-minecraft:explosion_knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"feet"}, \
             {"id":"b-minecraft:safe_fall_distance", "amount": 5, "operation":"add_value", "type":"minecraft:safe_fall_distance", "display":{"type":"default"}, "slot":"feet"}, \
             {"id":"b-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"feet"}, \
-            {"id":"b-minecraft:armor", "amount": 3, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"feet"}, \
+            {"id":"b-minecraft:armor", "amount": 4, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"feet"}, \
             {"id":"b-minecraft:armor_toughness", "amount": 5, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"feet"} \
         ] \
     }, \
@@ -139,7 +139,7 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_boots" set val
 
 data modify storage l.item:data zl_custom_tools."quartz_netherite_leggings" set value { \
     id:"quartz_netherite_leggings", \
-    version: 12, \
+    version: 13, \
     item: "minecraft:netherite_leggings", \
     components: { \
         "minecraft:equippable": {slot:"legs", asset_id:"zl.item:quartz_netherite"}, \
@@ -150,11 +150,11 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_leggings" set 
         "minecraft:repairable":{items:"minecraft:quartz"}, \
         "minecraft:max_damage": 880, \
         "minecraft:attribute_modifiers": [ \
-            {id:"b-minecraft:explosion_knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"feet"}, \
-            {id:"b-minecraft:safe_fall_distance", "amount": 5, "operation":"add_value", "type":"minecraft:safe_fall_distance", "display":{"type":"default"}, "slot":"feet"}, \
-            {id:"b-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"feet"}, \
-            {id:"b-minecraft:armor", "amount": 3, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"feet"}, \
-            {id:"b-minecraft:armor_toughness", "amount": 5, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"feet"} \
+            {id:"b-minecraft:explosion_knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"legs"}, \
+            {id:"b-minecraft:safe_fall_distance", "amount": 5, "operation":"add_value", "type":"minecraft:safe_fall_distance", "display":{"type":"default"}, "slot":"legs"}, \
+            {id:"b-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"legs"}, \
+            {id:"b-minecraft:armor", "amount": 7, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"legs"}, \
+            {id:"b-minecraft:armor_toughness", "amount": 5, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"legs"} \
         ] \
     }, \
     enchantments: { \
@@ -164,7 +164,7 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_leggings" set 
 
 data modify storage l.item:data zl_custom_tools."quartz_netherite_chestplate" set value { \
     id:"quartz_netherite_chestplate", \
-    version: 12, \
+    version: 13, \
     item: "minecraft:netherite_chestplate", \
     components: { \
         "minecraft:equippable": {slot:"chest", asset_id:"zl.item:amethyst_netherite"}, \
@@ -187,7 +187,7 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_chestplate" se
 
 data modify storage l.item:data zl_custom_tools."quartz_netherite_helmet" set value { \
     id:"quartz_netherite_helmet", \
-    version: 12, \
+    version: 13, \
     item: "minecraft:netherite_helmet", \
     components: { \
         "minecraft:equippable": {slot:"head", asset_id:"zl.item:quartz_netherite"}, \
@@ -200,7 +200,7 @@ data modify storage l.item:data zl_custom_tools."quartz_netherite_helmet" set va
         "minecraft:attribute_modifiers": [ \
             {"id":"h-minecraft:explosion_knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"head"}, \
             {"id":"h-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"head"}, \
-            {"id":"h-minecraft:armor", "amount": 3, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"head"}, \
+            {"id":"h-minecraft:armor", "amount": 4, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"head"}, \
             {"id":"h-minecraft:armor_toughness", "amount": 3, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"head"} \
         ] \
     }, \

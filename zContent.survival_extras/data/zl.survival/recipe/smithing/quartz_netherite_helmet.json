@@ -21,8 +21,8 @@
             "minecraft:attribute_modifiers": [
                 {"id":"h-minecraft:explosion_knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"head"},
                 {"id":"h-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"head"},
-                {"id":"h-minecraft:armor", "amount": 3, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"head"},
-                {"id":"h-minecraft:armor_toughness", "amount": 3, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"head"}
+                {"id":"h-minecraft:armor", "amount": 4, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"head"},
+                {"id":"h-minecraft:armor_toughness", "amount": 5, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"head"}
             ]
         }
     },

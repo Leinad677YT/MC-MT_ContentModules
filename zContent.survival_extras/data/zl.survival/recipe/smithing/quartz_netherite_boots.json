@@ -22,7 +22,7 @@
                 {"id":"b-minecraft:explosion_knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"feet"},
                 {"id":"b-minecraft:safe_fall_distance", "amount": 5, "operation":"add_value", "type":"minecraft:safe_fall_distance", "display":{"type":"default"}, "slot":"feet"},
                 {"id":"b-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"feet"},
-                {"id":"b-minecraft:armor", "amount": 3, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"feet"},
+                {"id":"b-minecraft:armor", "amount": 4, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"feet"},
                 {"id":"b-minecraft:armor_toughness", "amount": 5, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"feet"}
             ]
         }

@@ -21,8 +21,8 @@
             "minecraft:attribute_modifiers": [
                 {"id":"l-minecraft:explosion_knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:explosion_knockback_resistance", "display":{"type":"default"}, "slot":"legs"},
                 {"id":"l-minecraft:knockback_resistance", "amount": 0.1, "operation":"add_value", "type":"minecraft:knockback_resistance", "display":{"type":"default"}, "slot":"legs"},
-                {"id":"l-minecraft:armor", "amount": 6, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"legs"},
-                {"id":"l-minecraft:armor_toughness", "amount": 3, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"legs"},
+                {"id":"l-minecraft:armor", "amount": 7, "operation":"add_value", "type":"minecraft:armor", "display":{"type":"default"}, "slot":"legs"},
+                {"id":"l-minecraft:armor_toughness", "amount": 5, "operation":"add_value", "type":"minecraft:armor_toughness", "display":{"type":"default"}, "slot":"legs"},
                 {"id":"l-minecraft:jump_strength", "amount": 0.1, "operation":"add_value", "type":"minecraft:jump_strength", "display":{"type":"default"}, "slot":"legs"}
             ]
         }
