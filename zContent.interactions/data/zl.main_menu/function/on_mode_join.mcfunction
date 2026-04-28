@@ -13,3 +13,7 @@
     tag @s remove l.inventory.save_pos
     tag @s remove l.inventory.save_spawn
 ##
+
+## MENU SCORES
+    scoreboard players set @s l.menu.stage_main -677
+##
