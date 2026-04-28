@@ -1,0 +1,1 @@
+data modify storage leinad_perm:data saved_scores append value {objective: "zl.survival.whitelisted"}
