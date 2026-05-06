@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:empty",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_scrap",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate":"leinad.zl.item.scrap.name",
+                                "fallback":"Scrap",
+                                "color":"#68471a",
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

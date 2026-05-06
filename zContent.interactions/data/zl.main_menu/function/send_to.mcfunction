@@ -18,6 +18,11 @@
     $function l.user:player/load {mode:"$(mode)"}
 ##
 
+## tag self and remove displays
+    tag @s remove l.menu.in_menu
+    function zl.main_menu:menu/remove_displays with storage leinad_temp:game main_menu
+##
+
 ## REMOVE TEMP DATA
     data remove storage leinad_temp:game main_menu
 ##
