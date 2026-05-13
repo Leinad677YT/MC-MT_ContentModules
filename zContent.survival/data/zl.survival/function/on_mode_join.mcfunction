@@ -4,7 +4,8 @@
 
 ## LOAD
     gamemode survival @s
-    attribute @s attack_damage base reset
+    attribute @s minecraft:attack_damage base reset
+    attribute @s minecraft:block_interaction_range base reset
     effect clear @s night_vision
     effect clear @s saturation
 ##

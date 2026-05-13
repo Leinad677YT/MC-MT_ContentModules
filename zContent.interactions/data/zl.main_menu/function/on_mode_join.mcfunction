@@ -4,7 +4,8 @@
 
 ## LOAD
     gamemode adventure @s
-    attribute @s attack_damage base set -1000
+    attribute @s minecraft:attack_damage base set -1000
+    attribute @s minecraft:block_interaction_range base set -1000
     effect give @s night_vision infinite 0 true
     effect give @s saturation infinite 0 true
 ##

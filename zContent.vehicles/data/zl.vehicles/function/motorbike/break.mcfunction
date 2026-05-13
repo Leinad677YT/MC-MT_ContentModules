@@ -1,5 +1,5 @@
 ## SFX
-    playsound entity.iron_golem.damage neutral @a[distance=0..40] ~ ~ ~ 1 0.8 0
+    playsound entity.iron_golem.damage neutral @a[distance=0..40] ~ ~ ~ 1 0.65 0
 ##
 
 ## REMOVE ENTTIES
