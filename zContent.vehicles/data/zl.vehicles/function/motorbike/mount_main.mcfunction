@@ -7,9 +7,11 @@ data merge entity @s {Silent:true,DeathLootTable:"zl.vehicles:motorbike_break",A
 attribute @s minecraft:max_health base set 100
 attribute @s minecraft:scale base set 1.5
 attribute @s minecraft:movement_speed base set -1000
+attribute @s minecraft:knockback_resistance base set 0.6
+attribute @s minecraft:explosion_knockback_resistance base set 0.8
 
 effect give @s minecraft:instant_health 1 20 true
-#effect give @s minecraft:invisibility infinite 0 true
+effect give @s minecraft:invisibility infinite 0 true
 
 team join zl.vehicle @s
 

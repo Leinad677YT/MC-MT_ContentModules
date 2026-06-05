@@ -3,8 +3,10 @@
     $function zl.player_sit:remove_mount {name:$(name)}
 ##
 
-## NOT ALREADY PLAYED => ADD DATA 
-    $execute unless data storage z_p$(lower):root data.mode.hub run function l.user:player/set_mode_to_default {lower:$(lower),mode:"hub"}
+## RESET HUB DATA FOR UPDATES
+    $function l.user:player/set_mode_to_default {lower:$(lower),mode:"hub"}
+    ## NOT ALREADY PLAYED => ADD DATA 
+    # $execute unless data storage z_p$(lower):root data.mode.hub run function l.user:player/set_mode_to_default {lower:$(lower),mode:"hub"}
 ##
 
 ## LOAD

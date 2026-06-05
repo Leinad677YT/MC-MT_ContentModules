@@ -17,9 +17,9 @@ data modify storage leinad_perm:data initial_playerdata.survival set value {\
                 },\
                 spawnpoint: {\
                     dimension: "minecraft:overworld",\
-                    x: -3.0f,\
-                    y: 62.0f,\
-                    z: 43.0f,\
+                    x: -3,\
+                    y: 62,\
+                    z: 43,\
                     angle: 0.0f,\
                     block: "",\
                     forced: 1b\

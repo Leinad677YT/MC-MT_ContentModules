@@ -17,9 +17,9 @@ data modify storage leinad_perm:data initial_playerdata.hub set value {\
                 },\
                 spawnpoint: {\
                     dimension: "zl.main_menu:hub",\
-                    x: 0.5f,\
-                    y: 2.5f,\
-                    z: 0.5f,\
+                    x: 0,\
+                    y: 2,\
+                    z: 0,\
                     angle: 0.0f,\
                     block: "",\
                     forced: 1b\

@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "ride":{
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "minecraft:entity_type": "minecraft:sniffer",
+                    "entity_tags": {
+                        "any_of": [
+                            "zl.vehicle"
+                        ]
+                    }
+                },
+                "item": {
+                    
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "zl.vehicles:zaux/mount"
+    }
+}
