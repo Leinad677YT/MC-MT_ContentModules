@@ -20,4 +20,5 @@
     function l.user:inventory/load/items with storage leinad_temp:game inf_garden.macro
     tp 8.0 8.0 8.0
     tag @s add zl.inf_garden.in_game
+    tag @s add l.room.detect
 ##

@@ -21,6 +21,7 @@
     ##
     
     ## MARK IT
+        $data modify storage leinad_temp:game inf_garden.macro.id set value $(id)
         function zl.inf_garden:zaux/load/mark_generator_group with storage leinad_temp:game inf_garden.macro
     ##
 ##
@@ -61,9 +62,8 @@
 
 
 ## EXIT LOAD STATUS
-    forceload remove 0 0
     $data modify storage leinad_perm:data instance_db[{id:$(id)}].finished set value 1b
-    tellraw @a {storage:"leinad_temp:game",nbt:"inf_garden.macro"}
+    function l.user:instance/typed/725/force_update with storage leinad_temp:game inf_garden.macro
     return -1
 ##
 
