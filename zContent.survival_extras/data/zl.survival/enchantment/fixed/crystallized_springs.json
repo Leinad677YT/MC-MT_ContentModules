@@ -19,6 +19,14 @@
     "supported_items": "#zl.survival:equipment",
     "weight": 1,
     "effects": {
+        "minecraft:attributes":[
+            {
+                "attribute":"minecraft:jump_strength",
+                "id":"l-minecraft:jump_strength",
+                "amount": 0.1,
+                "operation":"add_value"
+            }
+        ],
         "minecraft:tick": [
             {
                 "effect": {

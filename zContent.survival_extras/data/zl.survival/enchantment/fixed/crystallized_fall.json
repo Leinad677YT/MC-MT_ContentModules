@@ -19,6 +19,14 @@
     "supported_items": "#zl.survival:equipment",
     "weight": 1,
     "effects": {
+        "minecraft:attributes": [
+            {
+                "attribute":"minecraft:safe_fall_distance",
+                "id":"b-minecraft:safe_fall_distance",
+                "amount": 5,
+                "operation":"add_value"
+            }
+        ],
         "minecraft:damage_protection": [
             {
                 "effect": {
