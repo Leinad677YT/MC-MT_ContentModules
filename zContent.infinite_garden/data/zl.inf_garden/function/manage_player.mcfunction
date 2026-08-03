@@ -5,7 +5,12 @@
 
 ## BEFORE CHANGING MODE
     data modify storage leinad_temp:game inf_garden.macro.mode set value "inf_garden"
+
     execute at @s run function #zl.user:inf_garden/manage_player_join
+
+    attribute @s minecraft:block_interaction_range base reset
+    attribute @s minecraft:entity_interaction_range base reset
+    attribute @s minecraft:max_health base reset
 ##
 
 
@@ -14,7 +19,7 @@
     ## CHANGE SESSION DATA
         function zl.inf_garden:zaux/mark_session with storage leinad_temp:game inf_garden.macro
     ##
-    
+
     tag @s remove l.inventory.save_pos
     tag @s remove l.inventory.save_spawn
     function l.user:inventory/load/items with storage leinad_temp:game inf_garden.macro
