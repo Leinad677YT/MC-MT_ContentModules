@@ -11,5 +11,4 @@
 ##
 
 ## tags
-    function zl.whitelist:zaux/whitelist_loop
 ##

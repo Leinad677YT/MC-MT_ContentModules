@@ -4,7 +4,8 @@
             "trigger": "tick",
             "conditions": {
                 "player": {
-                    "type_specific/player": {
+                    "type_specific": {
+                        "type":"player",
                         "input": {
                             "sneak": true
                         }

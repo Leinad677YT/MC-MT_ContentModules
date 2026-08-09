@@ -4,7 +4,8 @@
             "trigger": "minecraft:tick",
             "conditions": {
                 "player": {
-                    "type_specific/player": {
+                    "type_specific": {
+                        "type":"player",
                         "input": {
                             "sneak": false,
                             "sprint": true,
