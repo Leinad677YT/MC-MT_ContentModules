@@ -1,5 +1,5 @@
 ## SET ITEM MODEL
-    item replace entity @s container.0 with minecraft:poisonous_potato[item_model="zl.inf_garden:entities/sculk_slime"]
+    item replace entity @s container.0 with minecraft:poisonous_potato[item_model="zl.entity:entities/example_slime"]
 ##
 
 ## SET COMMON DATA
@@ -22,6 +22,6 @@
 
 
 ## TAG AND CONTINUE
-    tag @s add zl.entity.example_slime
+    tag @s add zl.entity.sculk_slime
     return 1
 ##

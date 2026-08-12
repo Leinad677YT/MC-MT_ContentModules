@@ -1,5 +1,6 @@
 {
     "values": [
+        "zl.inf_garden:entities/sculk_slime/spawn_child",
         "zl.inf_garden:entities/sculk_slime/spawn"
     ]
 }
