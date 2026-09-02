@@ -13,11 +13,11 @@ $execute positioned ^-7 ^ ^1 run place template $(structure) ~ 0 ~ $(rotation) n
         execute positioned ^0.1 ^ ^8.1 positioned ~ 0 ~ run function l.user:room/create
 
         # clear
-        execute positioned ^0.1 ^ ^8.1 positioned ~ 0 ~ summon marker run function zl.inf_garden:generation/start/mark/marker_fill with storage leinad_temp:game inf_garden.generation
-        execute positioned ^0.1 ^ ^8.1 positioned ~ 0 ~ summon marker run function zl.inf_garden:generation/start/mark/marker_remove_forceload with storage leinad_temp:game inf_garden.generation
-        execute positioned ^0.1 ^ ^8.1 positioned ~-8.0 0 ~-8.0 summon marker run function zl.inf_garden:generation/start/mark/marker_kill with storage leinad_temp:game inf_garden.generation
+        execute positioned ^0.1 ^ ^8.1 positioned ~ 0 ~ summon marker run function zl.inf_garden:generation/_chunk_based/mark/marker_fill with storage leinad_temp:game inf_garden.generation
+        execute positioned ^0.1 ^ ^8.1 positioned ~ 0 ~ summon marker run function zl.inf_garden:generation/_chunk_based/mark/marker_remove_forceload with storage leinad_temp:game inf_garden.generation
+        execute positioned ^0.1 ^ ^8.1 positioned ~-8.0 0 ~-8.0 summon marker run function zl.inf_garden:generation/_chunk_based/mark/marker_kill with storage leinad_temp:game inf_garden.generation
         # mark with dimension
-        function zl.inf_garden:generation/start/place/mark_room with storage leinad_temp:game inf_garden.generation
+        function zl.inf_garden:generation/_chunk_based/place/mark_room with storage leinad_temp:game inf_garden.generation
     ##
 
 

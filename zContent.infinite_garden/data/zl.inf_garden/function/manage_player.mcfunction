@@ -20,6 +20,8 @@
         function zl.inf_garden:zaux/mark_session with storage leinad_temp:game inf_garden.macro
     ##
 
+    scoreboard players reset @s l.menu.stage_main
+    
     tag @s remove l.inventory.save_pos
     tag @s remove l.inventory.save_spawn
     function l.user:inventory/load/items with storage leinad_temp:game inf_garden.macro

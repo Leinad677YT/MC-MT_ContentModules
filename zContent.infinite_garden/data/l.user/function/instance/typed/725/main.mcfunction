@@ -41,7 +41,7 @@
         # ID is given before
         execute positioned 8.0 0.0 8.0 run function l.user:room/create
         $data modify storage leinad_temp:game inf_garden.macro.instance_id set value $(id)
-        data modify storage leinad_temp:game inf_garden.macro.generator set value "start"
+        data modify storage leinad_temp:game inf_garden.macro.generator set value "zl_start"
         function zl.inf_garden:zaux/load/add_clear_to_start
         function zl.inf_garden:zaux/load/mark_room with storage leinad_temp:game inf_garden.macro
     ##

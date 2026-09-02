@@ -1,6 +1,5 @@
 {
     "values":[
-        "zl.survival:data/items/custom_tools",
-        "zl.survival:data/items/helmets"
+        "zl.survival:data/items/custom_tools"
     ]
 }

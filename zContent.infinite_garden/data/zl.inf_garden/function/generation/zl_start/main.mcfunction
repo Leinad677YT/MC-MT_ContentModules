@@ -56,7 +56,7 @@
          #   - 10 -  - 11 -  - 12 -   #
         ##     -----------------     ##
 
-        data modify storage leinad_temp:game inf_garden.temp set value [{shape:1},{shape:2},{shape:3},{shape:4},{shape:5},{shape:6},{shape:7},{shape:8},{shape:9},{shape:10}]
+        data modify storage leinad_temp:game inf_garden.temp set value [{shape:1},{shape:2},{shape:3},{shape:4},{shape:5},{shape:6},{shape:7},{shape:8},{shape:9},{shape:10},{shape:11},{shape:12}]
 data modify storage leinad_temp:game inf_garden.temp set value [{shape:7},{shape:8},{shape:9},{shape:10},{shape:10},{shape:10},{shape:10},{shape:11},{shape:12}]
         # 1
         execute unless score #temp.4 zl.inf_garden.global matches 1 run data remove storage leinad_temp:game inf_garden.temp[{shape:1}]
@@ -98,30 +98,30 @@ data modify storage leinad_temp:game inf_garden.temp set value [{shape:7},{shape
         execute store result score #temp.5 zl.inf_garden.global if data storage leinad_temp:game inf_garden.temp[]
         execute store result storage leinad_temp:game inf_garden.generation.roll int 1 run scoreboard players operation #temp.9 zl.inf_garden.global %= #temp.5 zl.inf_garden.global
 
-        function zl.inf_garden:generation/start/get_shape with storage leinad_temp:game inf_garden.generation
+        function zl.inf_garden:generation/zl_start/get_shape with storage leinad_temp:game inf_garden.generation
     ##
 
     ## STRUCTURE
-        function zl.inf_garden:generation/start/get_room_amount with storage leinad_temp:game inf_garden.generation
-        function zl.inf_garden:generation/start/get_room_target with storage leinad_temp:game inf_garden.generation
+        function zl.inf_garden:generation/zl_start/get_room_amount with storage leinad_temp:game inf_garden.generation
+        function zl.inf_garden:generation/zl_start/get_room_target with storage leinad_temp:game inf_garden.generation
 
         execute unless data storage leinad_temp:game inf_garden.generation.target_template unless data storage leinad_temp:game inf_garden.generation{target_template:0} run return fail
         data modify storage leinad_temp:game inf_garden.generation.safe set value "0b"
-        function zl.inf_garden:generation/start/redirect_place with storage leinad_temp:game inf_garden.generation
+        function zl.inf_garden:generation/zl_start/redirect_place with storage leinad_temp:game inf_garden.generation
     ##
 
     ## DOORS
-        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.south] at @s run function zl.inf_garden:generation/start/mark/marker_door_south with storage leinad_temp:game inf_garden.generation
-        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.west] at @s run function zl.inf_garden:generation/start/mark/marker_door_west with storage leinad_temp:game inf_garden.generation
-        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.east] at @s run function zl.inf_garden:generation/start/mark/marker_door_east with storage leinad_temp:game inf_garden.generation
-        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.north] at @s run function zl.inf_garden:generation/start/mark/marker_door_north with storage leinad_temp:game inf_garden.generation
+        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.south] at @s run function zl.inf_garden:generation/_chunk_based/mark/marker_door_south with storage leinad_temp:game inf_garden.generation
+        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.west] at @s run function zl.inf_garden:generation/_chunk_based/mark/marker_door_west with storage leinad_temp:game inf_garden.generation
+        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.east] at @s run function zl.inf_garden:generation/_chunk_based/mark/marker_door_east with storage leinad_temp:game inf_garden.generation
+        execute as @e[type=marker,x=0, tag=zl.inf_garden.door.north] at @s run function zl.inf_garden:generation/_chunk_based/mark/marker_door_north with storage leinad_temp:game inf_garden.generation
     ##
 ##
 
 ## LINK ROOMS
-    function zl.inf_garden:generation/start/check_connection with storage leinad_temp:game inf_garden.generation
+    function zl.inf_garden:generation/zl_start/check_connection with storage leinad_temp:game inf_garden.generation
 ##
 
 ## MARK THE ROOM
-    function zl.inf_garden:generation/start/mark_room with storage leinad_temp:game inf_garden.generation
+    function zl.inf_garden:generation/_chunk_based/mark_room with storage leinad_temp:game inf_garden.generation
 ##
