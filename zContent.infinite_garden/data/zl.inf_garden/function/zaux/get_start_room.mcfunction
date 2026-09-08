@@ -1,0 +1,1 @@
+return run function #zl.user:inf_garden/start_game with storage leinad_temp:game inf_garden.macro

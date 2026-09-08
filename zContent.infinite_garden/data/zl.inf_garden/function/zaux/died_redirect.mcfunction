@@ -1,0 +1,2 @@
+$data modify storage leinad_temp:game "zl.inf_garden".death set from storage leinad_perm:online session[{id:$(id)}]
+return run function #zl.user:inf_garden/died_ingame with storage leinad_temp:game "zl.inf_garden".death

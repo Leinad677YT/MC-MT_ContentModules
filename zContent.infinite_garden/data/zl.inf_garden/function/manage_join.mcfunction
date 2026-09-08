@@ -1,9 +1,9 @@
 ## REMOVE FROM GAME
     tag @s remove zl.inf_garden.in_game
-    tag @s remove l.room.detect
+    tag @s remove zl.inf_garden.left_game
 ##
 
-## NOT PLAYED INF_GARDEN => RETURN
+## PLAYED INF_GARDEN => RETURN
     $execute if data storage z_p$(lower):root data.mode.inf_garden run return fail
 ##
 

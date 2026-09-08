@@ -1,7 +1,7 @@
 ## GET ROOM NAME
     data modify storage leinad_temp:game inf_garden.macro.template set value "zl.inf_garden:non_pooled/start_room"
     scoreboard players set #start_room zl.inf_garden.global 0
-    function #zl.user:inf_garden/start_game with storage leinad_temp:game inf_garden.macro
+    execute store result score #start_room zl.inf_garden.global run function zl.inf_garden:zaux/get_start_room
 ##
 
 ## NOBODY TOOK CONTROL => PLACE START GENERATOR
