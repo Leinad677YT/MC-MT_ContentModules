@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "no_rotation":{
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific/player": {
+                        "input": {
+                            "sneak": false,
+                            "sprint": true,
+                            "right": true,
+                            "left": true
+                        }
+                    },
+                    "movement": {
+                        "speed": {
+                            "max": 0.0000000000000001
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "zl.player_sit:check_rotation"
+    }
+}

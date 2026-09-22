@@ -8,9 +8,9 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:slime_ball",
-                    "functions": [
+                    "modifier": [
                         {
-                            "function": "minecraft:set_count",
+                            "type": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
                                 "min": 0,
@@ -18,7 +18,7 @@
                             }
                         },
                         {
-                            "function": "minecraft:apply_bonus",
+                            "type": "minecraft:apply_bonus",
                             "enchantment": "minecraft:looting",
                             "formula": "minecraft:uniform_bonus_count",
                             "parameters": {

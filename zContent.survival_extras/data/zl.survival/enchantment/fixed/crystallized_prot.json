@@ -15,7 +15,9 @@
         "base": 0,
         "per_level_above_first": 0
     },
-    "slots": ["armor"],
+    "slots": [
+        "armor"
+    ],
     "supported_items": "#zl.survival:equipment",
     "weight": 1,
     "effects": {
@@ -58,10 +60,10 @@
                     }
                 },
                 "requirements": {
-                    "condition": "minecraft:random_chance",
+                    "type": "minecraft:random_chance",
                     "chance": {
                         "type": "minecraft:enchantment_level",
-                        "amount":{
+                        "amount": {
                             "type": "minecraft:linear",
                             "base": 0.01,
                             "per_level_above_first": 0.01

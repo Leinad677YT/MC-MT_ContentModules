@@ -1,12 +1,16 @@
 {
     "criteria": {
-        "sneak":{
+        "sneak": {
             "trigger": "tick",
             "conditions": {
                 "player": {
-                    "type_specific/player": {
-                        "input": {
-                            "sneak": true
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific/player": {
+                            "input": {
+                                "sneak": true
+                            }
                         }
                     }
                 }

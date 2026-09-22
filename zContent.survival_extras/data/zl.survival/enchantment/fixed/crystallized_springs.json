@@ -15,16 +15,18 @@
         "base": 0,
         "per_level_above_first": 0
     },
-    "slots": ["legs"],
+    "slots": [
+        "legs"
+    ],
     "supported_items": "#zl.survival:equipment",
     "weight": 1,
     "effects": {
-        "minecraft:attributes":[
+        "minecraft:attributes": [
             {
-                "attribute":"minecraft:jump_strength",
-                "id":"l-minecraft:jump_strength",
+                "attribute": "minecraft:jump_strength",
+                "id": "l-minecraft:jump_strength",
                 "amount": 0.1,
-                "operation":"add_value"
+                "operation": "add_value"
             }
         ],
         "minecraft:tick": [
@@ -55,13 +57,13 @@
                     "speed": 2
                 },
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "movement": {
                             "vertical_speed": {
                                 "min": 0.3
-                            }   
+                            }
                         }
                     }
                 }

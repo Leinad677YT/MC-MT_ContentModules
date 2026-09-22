@@ -8,17 +8,15 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:netherite_scrap",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_name",
-                            "name": {
-                                "translate":"leinad.zl.item.scrap.name",
-                                "fallback":"Scrap",
-                                "color":"#68471a",
-                                "italic": false
-                            }
+                    "modifier": {
+                        "type": "minecraft:set_name",
+                        "name": {
+                            "translate": "leinad.zl.item.scrap.name",
+                            "fallback": "Scrap",
+                            "color": "#68471a",
+                            "italic": false
                         }
-                    ]
+                    }
                 }
             ]
         }

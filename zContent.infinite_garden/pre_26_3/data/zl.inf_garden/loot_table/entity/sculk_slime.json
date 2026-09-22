@@ -1,5 +1,6 @@
 {
     "type": "minecraft:entity",
+    "functions": [],
     "pools": [
         {
             "rolls": 1,
@@ -11,6 +12,5 @@
                 }
             ]
         }
-    ],
-    "modifier": []
+    ]
 }

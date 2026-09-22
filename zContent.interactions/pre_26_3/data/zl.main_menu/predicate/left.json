@@ -1,8 +1,8 @@
 {
-    "type": "all_of",
+    "condition": "all_of",
     "terms": [
         {
-            "type": "entity_properties",
+            "condition": "entity_properties",
             "entity": "this",
             "predicate": {
                 "type_specific/player": {
@@ -13,7 +13,7 @@
             }
         },
         {
-            "type": "entity_scores",
+            "condition": "entity_scores",
             "entity": "this",
             "scores": {
                 "zl.menu_trigger.delay": {
