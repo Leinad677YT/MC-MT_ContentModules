@@ -27,7 +27,8 @@
 ##
 
 ## SET DATA FOR DISPLAY SCALE
-    execute store result entity @s data.zl_entity.scale_base float 1.0 \
+    execute store result entity @s data.zl_entity.scale_particle float 0.16 \
+            store result entity @s data.zl_entity.scale_base float 1.0 \
             store result entity @s data.zl_entity.scale_squish float 0.9 \
             store result entity @s data.zl_entity.scale_expand float 1.1 run scoreboard players add #sync.aux zl.temp 1
 ##

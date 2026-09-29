@@ -1,5 +1,5 @@
 ## SET ITEM MODEL
-    item replace entity @s container.0 with minecraft:poisonous_potato[item_model="zl.entity:entities/example_slime"]
+    item replace entity @s container.0 with minecraft:poisonous_potato[item_model="zl.inf_garden:entities/sculk_slime"]
 ##
 
 ## SET COMMON DATA
@@ -15,7 +15,8 @@
 ##
 
 ## SCALE DATA
-    execute store result entity @s data.zl_entity.scale_base float 1.0 \
+    execute store result entity @s data.zl_entity.scale_particle float 0.2 \
+            store result entity @s data.zl_entity.scale_base float 1.0 \
             store result entity @s data.zl_entity.scale_squish float 0.9 \
             store result entity @s data.zl_entity.scale_expand float 1.1 run scoreboard players get #sync.aux zl.temp
 ##

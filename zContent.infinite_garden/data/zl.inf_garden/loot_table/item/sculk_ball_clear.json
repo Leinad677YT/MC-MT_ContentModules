@@ -1,0 +1,44 @@
+{
+    "type": "minecraft:empty",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "slime_ball",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_name",
+                            "name": {
+                                "translate": "leinad.zl.inf_garden.item.sculk_ball_clear.name",
+                                "fallback": "Sculk ball",
+                                "color": "#10789d",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "type": "minecraft:set_custom_data",
+                            "tag": {
+                                "l":{
+                                    "item_version": 1,
+                                    "item_group": "zl_infinite_garden",
+                                    "item_id": "sculk_ball_clear"
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "item_model": "zl.inf_garden:sculk_ball_clear"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "modifier": [],
+    "random_sequence": "zl.item"
+}

@@ -6,11 +6,67 @@
             "bonus_rolls": 0,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "acacia_boat"
+                    "type": "minecraft:loot_table",
+                    "value": "zl.inf_garden:item/sculk_ball",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 2,
+                                "min": 0
+                            }
+                        },
+                        {
+                            "type": "minecraft:enchanted_count_increase",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 1,
+                                "min": 0
+                            },
+                            "enchantment": "minecraft:looting"
+                        }
+                    ],
+                    "condition": {
+                        "type": "minecraft:inverted",
+                        "term": {
+                        "type": "minecraft:damage_source_properties",
+                        "predicate": {
+                            "source_entity": {
+                                "minecraft:entity_type": "minecraft:frog"
+                            }
+                        }
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "zl.inf_garden:item/sculk_ball_clear",
+                    "condition": {
+                        "type": "minecraft:damage_source_properties",
+                        "predicate": {
+                            "source_entity": {
+                                "minecraft:entity_type": "minecraft:frog"
+                            }
+                        }
+                    },
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": 1
+                    }
                 }
-            ]
+            ],
+             "condition": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "minecraft:type_specific/cube_mob": {
+                        "size": 1
+                    }
+                }
+            }
         }
     ],
-    "modifier": []
+    "modifier": [],
+    "random_sequence": "minecraft:entities/slime"
 }

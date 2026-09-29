@@ -1,1 +1,0 @@
-give @s slime_ball[custom_model_data={strings:["leinad:sculk_ball"]}]
